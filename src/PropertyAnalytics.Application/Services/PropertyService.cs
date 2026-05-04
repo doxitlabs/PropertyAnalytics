@@ -32,11 +32,11 @@ public class PropertyService(MasterDbContext db, PropertyDbProviderService dbPro
 
     public async Task<PropertyDto> CreateAsync(CreatePropertyDto dto, int userId)
     {
-        // Build per-property connection string
+        // Build per-property connection string from the master DB connection
         var dbName = $"PropertyAnalytics_Property_{Guid.NewGuid():N}";
-        var baseCs = dto.MasterConnectionString;
-        var propertyCs = baseCs.Contains("Database=")
-            ? System.Text.RegularExpressions.Regex.Replace(baseCs, @"Database=[^;]+", $"Database={dbName}")
+        var baseCs = db.Database.GetConnectionString()!;
+        var propertyCs = System.Text.RegularExpressions.Regex.IsMatch(baseCs, @"(?i)Database=")
+            ? System.Text.RegularExpressions.Regex.Replace(baseCs, @"(?i)Database=[^;]+", $"Database={dbName}")
             : baseCs + $";Database={dbName}";
 
         var property = new Property
