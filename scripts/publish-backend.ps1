@@ -15,10 +15,13 @@ Set-Location $apiDir
 dotnet publish PropertyAnalytics.API.csproj -c Release -o $tmpDir
 if ($LASTEXITCODE -ne 0) { Write-Error "dotnet publish failed"; exit 1 }
 
+Write-Host ">>> Zaustavljanje IIS-a..."
+Invoke-Command -ComputerName DESKTOP-7B0NR97 -ScriptBlock { net stop W3SVC /y }
+
 Write-Host ">>> Kopiranje u publish folder..."
 Copy-Item -Path "$tmpDir\*" -Destination $publishDir -Recurse -Force
 
-Write-Host ">>> IIS reset..."
-Invoke-Command -ComputerName DESKTOP-7B0NR97 -ScriptBlock { iisreset }
+Write-Host ">>> Pokretanje IIS-a..."
+Invoke-Command -ComputerName DESKTOP-7B0NR97 -ScriptBlock { net start W3SVC }
 
 Write-Host ">>> DONE: Backend publishan."

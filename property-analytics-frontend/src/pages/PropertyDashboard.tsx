@@ -125,8 +125,9 @@ export default function PropertyDashboard() {
   useEffect(() => {
     loadData()
 
+    const hubBase = import.meta.env.VITE_API_URL ?? ''
     const connection = new signalR.HubConnectionBuilder()
-      .withUrl('/hubs/analytics', {
+      .withUrl(`${hubBase}/hubs/analytics`, {
         accessTokenFactory: () => localStorage.getItem('token') ?? '',
       })
       .withAutomaticReconnect()
