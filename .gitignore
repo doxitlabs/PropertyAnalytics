@@ -1,0 +1,21 @@
+# .NET
+bin/
+obj/
+*.user
+.vs/
+*.suo
+appsettings.Development.json
+
+# Node / React
+node_modules/
+dist/
+.env
+.env.local
+
+# EF migrations lock
+*.db
+*.db-journal
+
+# Rider / VS Code
+.idea/
+.vscode/

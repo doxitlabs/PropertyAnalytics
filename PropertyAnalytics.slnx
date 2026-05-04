@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/PropertyAnalytics.API/PropertyAnalytics.API.csproj" />
+    <Project Path="src/PropertyAnalytics.Application/PropertyAnalytics.Application.csproj" />
+    <Project Path="src/PropertyAnalytics.Domain/PropertyAnalytics.Domain.csproj" />
+    <Project Path="src/PropertyAnalytics.Infrastructure/PropertyAnalytics.Infrastructure.csproj" />
+    <Project Path="src/PropertyAnalytics.Worker/PropertyAnalytics.Worker.csproj" />
+  </Folder>
+</Solution>
