@@ -22,6 +22,7 @@ builder.Services.AddScoped<PropertyService>();
 builder.Services.AddScoped<BookingService>();
 builder.Services.AddScoped<ExpenseService>();
 builder.Services.AddScoped<AnalyticsService>();
+builder.Services.AddScoped<ImportService>();
 
 // JWT Authentication
 var jwtKey = builder.Configuration["Jwt:Key"]!;
