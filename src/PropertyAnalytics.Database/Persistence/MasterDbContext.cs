@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using PropertyAnalytics.Domain.Entities;
 
-namespace PropertyAnalytics.Infrastructure.Persistence;
+namespace PropertyAnalytics.Database.Persistence;
 
 public class MasterDbContext(DbContextOptions<MasterDbContext> options) : DbContext(options)
 {

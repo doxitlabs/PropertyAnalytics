@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using PropertyAnalytics.Infrastructure.Persistence;
+using PropertyAnalytics.Database.Persistence;
 
-namespace PropertyAnalytics.Infrastructure.Services;
+namespace PropertyAnalytics.Database.Services;
 
 /// <summary>
 /// Resolves the per-property DbContext from a connection string.

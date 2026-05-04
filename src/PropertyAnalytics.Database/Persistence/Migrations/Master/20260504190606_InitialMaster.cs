@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace PropertyAnalytics.Infrastructure.Persistence.Migrations.Master
+namespace PropertyAnalytics.Database.Persistence.Migrations.Master
 {
     /// <inheritdoc />
     public partial class InitialMaster : Migration

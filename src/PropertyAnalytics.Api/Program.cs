@@ -4,14 +4,14 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using PropertyAnalytics.API.Hubs;
 using PropertyAnalytics.Application.Services;
-using PropertyAnalytics.Infrastructure.Persistence;
-using PropertyAnalytics.Infrastructure.Services;
+using PropertyAnalytics.Database.Persistence;
+using PropertyAnalytics.Database.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // EF Core — Master DB
 builder.Services.AddDbContext<MasterDbContext>(opt =>
-    opt.UseSqlServer(builder.Configuration.GetConnectionString("Master")));
+    opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Per-property DB provider (singleton cache)
 builder.Services.AddSingleton<PropertyDbProviderService>();

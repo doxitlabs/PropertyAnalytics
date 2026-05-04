@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using PropertyAnalytics.Application.DTOs.Booking;
 using PropertyAnalytics.Domain.Entities;
-using PropertyAnalytics.Infrastructure.Services;
+using PropertyAnalytics.Database.Services;
 
 namespace PropertyAnalytics.Application.Services;
 

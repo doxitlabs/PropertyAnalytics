@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using PropertyAnalytics.Domain.Entities;
 
-namespace PropertyAnalytics.Infrastructure.Persistence;
+namespace PropertyAnalytics.Database.Persistence;
 
 /// <summary>
 /// Per-property database context — each property has its own SQL Server database.

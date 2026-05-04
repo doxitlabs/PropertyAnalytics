@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 
-namespace PropertyAnalytics.Infrastructure.Persistence;
+namespace PropertyAnalytics.Database.Persistence;
 
 /// <summary>
 /// Used by EF Core Tools at design time to create PropertyDbContext for migrations.

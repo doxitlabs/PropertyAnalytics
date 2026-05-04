@@ -2,7 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PropertyAnalytics.Domain\PropertyAnalytics.Domain.csproj" />
-    <ProjectReference Include="..\PropertyAnalytics.Infrastructure\PropertyAnalytics.Infrastructure.csproj" />
+    <ProjectReference Include="..\PropertyAnalytics.Database\PropertyAnalytics.Database.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -6,7 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using PropertyAnalytics.Application.DTOs.Auth;
 using PropertyAnalytics.Domain.Entities;
-using PropertyAnalytics.Infrastructure.Persistence;
+using PropertyAnalytics.Database.Persistence;
 
 namespace PropertyAnalytics.Application.Services;
 

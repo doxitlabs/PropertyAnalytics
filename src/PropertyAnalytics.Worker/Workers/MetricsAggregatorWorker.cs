@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.SignalR.Client;
 using Microsoft.EntityFrameworkCore;
-using PropertyAnalytics.Infrastructure.Persistence;
-using PropertyAnalytics.Infrastructure.Services;
+using PropertyAnalytics.Database.Persistence;
+using PropertyAnalytics.Database.Services;
 
 namespace PropertyAnalytics.Worker.Workers;
 

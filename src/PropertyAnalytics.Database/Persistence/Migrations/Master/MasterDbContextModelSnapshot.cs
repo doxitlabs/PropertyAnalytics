@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using PropertyAnalytics.Infrastructure.Persistence;
+using PropertyAnalytics.Database.Persistence;
 
 #nullable disable
 
-namespace PropertyAnalytics.Infrastructure.Persistence.Migrations.Master
+namespace PropertyAnalytics.Database.Persistence.Migrations.Master
 {
     [DbContext(typeof(MasterDbContext))]
     partial class MasterDbContextModelSnapshot : ModelSnapshot

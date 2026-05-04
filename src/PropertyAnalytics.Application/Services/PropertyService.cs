@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using PropertyAnalytics.Application.DTOs.Property;
 using PropertyAnalytics.Domain.Entities;
-using PropertyAnalytics.Infrastructure.Persistence;
-using PropertyAnalytics.Infrastructure.Services;
+using PropertyAnalytics.Database.Persistence;
+using PropertyAnalytics.Database.Services;
 
 namespace PropertyAnalytics.Application.Services;
 
