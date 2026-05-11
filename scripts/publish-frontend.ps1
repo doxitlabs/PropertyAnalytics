@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 
 $buildDir   = "C:\Projects\PropertyAnalytics\property-analytics-frontend"
-$publishDir = "\\DESKTOP-7B0NR97\inetpub\wwwroot\PropertyAnalytics"
+$publishDir = "\\DOXITLABSSERVER\inetpub\wwwroot\PropertyAnalytics"
 
 Write-Host ">>> Provjera mrežnog patha..."
 if (-not (Test-Path $publishDir)) {
