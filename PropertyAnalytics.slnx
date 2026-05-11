@@ -1,9 +1,6 @@
 <Solution>
-  <Folder Name="/src/">
-    <Project Path="src/PropertyAnalytics.API/PropertyAnalytics.API.csproj" />
-    <Project Path="src/PropertyAnalytics.Application/PropertyAnalytics.Application.csproj" />
-    <Project Path="src/PropertyAnalytics.Database/PropertyAnalytics.Database.csproj" />
-    <Project Path="src/PropertyAnalytics.Domain/PropertyAnalytics.Domain.csproj" />
-    <Project Path="src/PropertyAnalytics.Worker/PropertyAnalytics.Worker.csproj" />
-  </Folder>
+  <Project Path="PropertyAnalytics.API/PropertyAnalytics.API.csproj" />
+  <Project Path="PropertyAnalytics.Application/PropertyAnalytics.Application.csproj" />
+  <Project Path="PropertyAnalytics.Data/PropertyAnalytics.Data.csproj" />
+  <Project Path="PropertyAnalytics.Domain/PropertyAnalytics.Domain.csproj" />
 </Solution>
